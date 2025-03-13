@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 import plotly.graph_objects as go
 import numpy as np
 import re
-from pyngrok import ngrok, conf
+from pyngrok import ngrok, conf # As compilation was done in Colab, this module was used. Can be ignored for other environments
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Used for session management
